@@ -1,5 +1,5 @@
 // This contains all of the code for the local storage components.
-export default class kanbanAPI {
+export default class KanbanAPI {
   static getItems(columnId) {
 		const column = read().find(column => column.id == columnId);
 

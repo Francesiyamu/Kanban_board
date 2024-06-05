@@ -1,6 +1,6 @@
 import KanbanAPI from "../api/KanbanAPI.js";
 import DropZone from "./DropZone.js";
-import Item from "./Item.js";
+import Item from "./item.js";
 
 export default class Column {
 	constructor(id, title) {
@@ -27,7 +27,9 @@ export default class Column {
 		});
 	}
 
+
 	static createRoot() {
+		//generate an html sctructure using JS
 		const range = document.createRange();
 
 		range.selectNode(document.body);
